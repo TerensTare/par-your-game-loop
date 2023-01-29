@@ -1,0 +1,77 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<style>
+		.slides p,
+		.slides ul,
+		.slides ol,
+		.slides li {
+			font-family: 'calisto-mt-regular', sans-serif;
+		}
+
+		.slides h1,
+		.slides h2,
+		.slides h3,
+		.slides h4,
+		.slides h5,
+		.slides h6 {
+			font-family: 'univers-condensed', sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Title -->
+			<section data-markdown="slides/title.md" data-separator-vertical="^&lt;end-page&gt;"></section>
+			<!-- Why bother -->
+			<section data-markdown="slides/why-bother.md" data-separator-vertical="^&lt;end-page&gt;"></section>
+			<!-- Classic game loop -->
+			<section data-markdown="slides/classical-loop.md" data-separator-vertical="^&lt;end-page&gt;"></section>
+			<!-- Job systems -->
+			<section data-markdown="slides/job-systems-intro.md" data-separator-vertical="^&lt;end-page&gt;"></section>
+			<!-- Multithreaded Rendering -->
+			<section data-markdown="slides/mt-rendering.md" data-separator-vertical="^&lt;end-page&gt;"></section>
+			<!-- Lessons learned -->
+			<section data-markdown="slides/lessons.md" data-separator-vertical="^&lt;end-page&gt;"></section>
+			<!-- References -->
+			<section data-markdown="slides/refs.md" data-separator-vertical="^&lt;end-page&gt;"></section>
+			<!-- Q & A -->
+			<section data-markdown="slides/qa.md" data-separator-vertical="^&lt;end-page&gt;"></section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			fragments: true,
+
+			dependencies: [
+				{ src: 'plugin/sampler.js' }
+			],
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
