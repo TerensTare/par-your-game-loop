@@ -4,8 +4,8 @@
 - Allow for a task-based parallelism model. <!-- .element: class="fragment" -->
 - Dependencies required to be specified beforehand. <!-- .element: class="fragment" -->
 - tasks + dependencies -> task graph <!-- .element: class="fragment" -->
-- Handle synchronization and ordering internally. <!-- .element: class="fragment" -->
 - Can use any parallel computing model: threads, fibers, coroutines, you name it. <!-- .element: class="fragment" -->
+- Handle synchronization and ordering internally. <!-- .element: class="fragment" -->
 
 <end-page>
 
